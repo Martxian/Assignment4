@@ -11,7 +11,7 @@ const fs = require("fs");
 // we are mapping file system paths to the app's virtual paths
 app.use("/js", express.static("./public/js"));
 app.use("/css", express.static("./public/css"));
-app.use("/img", express.static("./public/img"));
+app.use("/images", express.static("./public/images"));
 
 app.get("/", function (req, res) {
     //console.log(process.env);
